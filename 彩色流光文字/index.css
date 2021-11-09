@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20%;
+  background-image: -webkit-linear-gradient(left, #e952aa, red, yellow, blue, #b8c1c0);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-size: 200% 100%;
+  animation: textColor 5s ease-in-out 0s infinite;
+}
+
+@keyframes textColor {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -100% 0;
+  }
+}

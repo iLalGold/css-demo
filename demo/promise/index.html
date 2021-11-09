@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const abc = new Promise((resolve, reject) => {
+        resolve("abc");
+        // reject("错误");
+      });
+      abc
+        .then(
+          (res) => {
+            return new Promise((resolve, reject) => {
+              //   resolve(
+              //     new Promise((resolve, reject) => {
+              //       reject("qweqweqwe");
+              //     })
+              //   );
+              reject(
+                new Promise((resolve, reject) => {
+                  resolve("asdasdasd");
+                })
+              );
+            });
+          },
+          (err) => {
+            console.log(err, "err");
+          }
+        )
+        .then(
+          (res) => {
+            console.log(res, "@@@");
+          },
+          (err) => {
+            const asd = err;
+            asd.then((res) => {
+              console.log(res, "asdasdasd");
+            });
+          }
+        );
+    </script>
+  </body>
+</html>

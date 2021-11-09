@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./buttom.css" />
+  </head>
+  <body>
+    <div class="centered">
+      <div class="plus" id="plus">
+        <div class="plus__line plus__line--v">
+          <a href="#" class="plus__link ion-person">a</a>
+          <a href="#" class="plus__link ion-images">b</a>
+          <a href="#" class="plus__link ion-music-note">c</a>
+          <a href="#" class="plus__link ion-location">d</a>
+        </div>
+        <div class="plus__line plus__line--h"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var plus = document.getElementById("plus");
+    console.log(plus.classList);
+    function plusToggle() {
+      plus.classList.toggle("plus--active");
+    }
+
+    plus.addEventListener("click", plusToggle);
+  </script>
+</html>
