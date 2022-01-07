@@ -1,0 +1,29 @@
+section {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  line-height: 100vh;
+  text-align: center;
+  font-size: 20vh;
+}
+
+.g-img1 {
+  background-image: url("http://pic7.photophoto.cn/20080407/0034034859692813_b.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.g-img2 {
+  background-image: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2020-07-07%2F5f04349cdbe16.jpg&refer=http%3A%2F%2Fpic1.win4000.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1644116938&t=c7ac0975c7d1bae6cd7dd8737214cb2f");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.g-img3 {
+  background-image: url("https://images.unsplash.com/photo-1440688807730-73e4e2169fb8?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
